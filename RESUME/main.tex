@@ -35,8 +35,8 @@
 % \usepackage{charter}
 
 %----------HELVETICA FONT----------
-% \usepackage[scaled]{helvet}
-% \renewcommand{\familydefault}{\sfdefault}
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -137,22 +137,32 @@
 %-----------PROFILE-----------
 \section{Profile}
 \begin{justify}
-Graduating IT student specializing in back-end development with 4 years experience in desktop and 3 years in web development. Initially focused on Java, now developing websites using the LAMP or TALL stack with Laravel. Became interested in programming at age 16 and continue learning today. Proven ability in project management, leadership, freelancing, and mentoring. Innovative and dedicated in every development.
+Recent IT graduate specializing specializing in back-end development, with 4 years of experience in desktop and 3 years in web development. Initially focused on Java, now working with the LAMP and TALL stacks using Laravel and Symfony as back-end frameworks. Became interested in programming at age 16 and continue learning today. Proven ability in project management, leadership, freelancing, and mentoring. Innovative and dedicated in every project development.
 \end{justify}
 
 
 %-----------TECHNICAL SKILLS-----------
+% \section{Technical Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Programming Languages}{: PHP, Java, JavaScript, VB.Net, C, C\#, C++, HTML/CSS, SQL} \\
+%      \textbf{Frameworks \& Technologies}{: Laravel (LAMP \& TALL Stack), Symfony, Node.js, RESTful APIs} \\
+%      \textbf{Development \& DevOps}{: Git, GitHub, Docker, Postman, PHPUnit} \\
+%      \textbf{IDEs \& Tools}{: VS Code, Visual Studio, Android Studio, NetBeans, IntelliJ IDEA, Eclipse} \\
+%      \textbf{Database}{: MySQL} \\
+%      \textbf{Local Development \& Deployment}{: XAMPP, WAMP, Vercel} \\
+%     }}
+%  \end{itemize}
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
+\begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Programming Languages}{: PHP, Java, JavaScript, VB.Net, C, C\#, C++, HTML/CSS, SQL} \\
-     \textbf{Frameworks \& Technologies}{: Laravel (LAMP \& TALL Stack), Symfony, Node.js, RESTful APIs} \\
-     \textbf{Development \& DevOps}{: Git, GitHub, Docker, Postman, PHPUnit} \\
-     \textbf{IDEs \& Tools}{: VS Code, Visual Studio, Android Studio, NetBeans, IntelliJ IDEA, Eclipse} \\
-     \textbf{Database}{: MySQL} \\
-     \textbf{Local Development \& Deployment}{: XAMPP, WAMP, Vercel} \\
+     \textbf{Core Backend Skills}{: PHP, Laravel (LAMP \& TALL Stack), Symfony, RESTful APIs, MySQL, Git} \\
+     \textbf{Frameworks \& Technologies}{: Laravel, FilamentPHP, Node.js} \\
+     \textbf{Frontend \& UI}{: JavaScript, jQuery, HTML/CSS, Bootstrap, Tailwind CSS} \\
+     \textbf{Development \& DevOps}{: GitHub, Postman, XAMPP/WAMP} \\
+     \textbf{Also Familiar With}{: Java, VB.Net, C, C\#, C++, Android Studio, NetBeans, IntelliJ IDEA, Eclipse, Docker, PHPUnit} \\
     }}
- \end{itemize}
+\end{itemize}
 
 % %-----------KEY ACHIEVEMENTS-----------
 % \section{Key Achievements}
@@ -177,10 +187,10 @@ Graduating IT student specializing in back-end development with 4 years experien
     %   \resumeItemListEnd
 
     \resumeSubheading
-      {Software Developer Intern}{February 2025 -- April 2025}
+      {Backend Developer Intern}{February 2025 -- April 2025}
       {\href{https://bapplware.com/}{Bapplware Technologies, Inc.}}{Mandaluyong City, Philippines}
       \resumeItemListStart
-        \resumeItem{Developed RESTful APIs using PHP Symfony, implementing best practices for structure and maintainability.}
+        \resumeItem{\href{https://hrp-api.bapplware.com/api}{Developed RESTful APIs} using PHP Symfony, implementing best practices for structure and maintainability.}
          \resumeItem{Implemented structured API with timestamps, soft deletes, and exception handling, improving data integrity issues.}
         \resumeItem{Delivered multiple modules for the \href{https://hrp-api.bapplware.com/api}{HRP-API} platform, ensuring smooth system integration.}
         \resumeItem{Created and ran test cases with PHPUnit, improving code quality and security.}
@@ -241,7 +251,7 @@ Graduating IT student specializing in back-end development with 4 years experien
 
 
 %-----------KEY PROJECTS-----------
-\section{Key Projects}
+\section{Development Key Projects}
     \resumeSubHeadingListStart
     
     % \resumeProjectHeading
@@ -254,22 +264,31 @@ Graduating IT student specializing in back-end development with 4 years experien
     %   \resumeItemListEnd
 
     \resumeProjectHeading
+      {\href{https://hrp-api.bapplware.com/api}
+      {\textbf{HRP-API (Internship Project)} $|$ \emph{Symfony PHP, Quasar}}}{January 2025 -- April 2025}
+      \resumeItemListStart
+        \resumeItem{Built structured RESTful APIs with PHP Symfony as a Backend Developer Intern. Implemented timestamps, soft deletes, and exception handling. Delivered key modules and ensured code quality through PHPUnit testing.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\href{https://mmchurch.online}
+      {\textbf{MMC MIS (Capstone Project)} $|$ \emph{LAMP/TALL Stack PHP, MySQL, Laravel}}}{September 2023 -- April 2025}
+      \resumeItemListStart
+        \resumeItem{Developed a MIS for Mabuhay Methodist Church to streamline admin workflows and reduce workload.}
+        % \resumeItem{Developed a management information system as capstone project for Mabuhay Methodist Church to streamline admin workflows, reducing administrative workload.}
+        % \resumeItem{Implemented modules for member, equipment, activity, announcement, attendance, and donation management.}
+        % \resumeItem{Created a backend for administrators, secretaries, inventory staff, and pastors, and a frontend structure for church members.}
+        \resumeItem{Led the project team and served as lead programmer.}
+        \resumeItem{Awarded as \textbf{Best Software Developmental Study} during the 18\textsuperscript{th} Research Congress.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
       {\href{https://github.com/solutionforest/filament-scaffold}
       {\textbf{Filament-scaffold (Open-source contribution)} $|$ \emph{TALL Stack PHP, Filament}}}{August 2024 -- November 2024}
       \resumeItemListStart
         \resumeItem{Contributed to Filament-scaffold, a open-source library for automating resource generation in Filament Admin.}
         \resumeItem{Enabled the automatic creation of models, migrations, forms, and table views based on database structure.}
         % \resumeItem{Contributed to the Filament community.}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\href{https://mmchurch.online}
-      {\textbf{MMC MIS (Capstone Project)} $|$ \emph{LAMP/TALL Stack PHP, MySQL, Laravel}}}{September 2023 -- May 2024}
-      \resumeItemListStart
-        \resumeItem{Developed a management information system as capstone project for Mabuhay Methodist Church to streamline admin workflows, reducing administrative workload.}
-        % \resumeItem{Implemented modules for member, equipment, activity, announcement, attendance, and donation management.}
-        % \resumeItem{Created a backend for administrators, secretaries, inventory staff, and pastors, and a frontend structure for church members.}
-        \resumeItem{Led the project team and served as lead programmer.}
       \resumeItemListEnd
 
       \resumeProjectHeading
@@ -289,33 +308,24 @@ Graduating IT student specializing in back-end development with 4 years experien
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {\href{https://www.facebook.com/photo/?fbid=479221431599846}
-      {President, BSIT Students' League}}
-      {August 2024 -- Present}
-      {University Academic Organization}{}
+      {University Academic Organizations \& Commission on Elections}
+      {Aug 2022 -- Jun 2025}
+      {University of Rizal System - Binangonan Campus}
+      {}
       \resumeItemListStart
-        \resumeItem{Led and organized events that increased student participation in organizational activities.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {\href{https://www.facebook.com/photo/?fbid=122141504498280266}
-      {Member, URS Binangonan Electoral Tribunal}}
-      {August 2024 -- Present}
-      {University Commission on Elections}{}
-      \resumeItemListStart
-        \resumeItem{Conducted candidate interviews and designed election publication materials.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {\href{https://www.facebook.com/photo/?fbid=289764900545501}
-      {Vice President, BSIT Students' League}}
-      {August 2023 -- June 2024}
-      {University Academic Organization}{}
-      \resumeItemListStart
-        \resumeItem{Planned activities and handled organizational discipline.}
+        \resumeItem{\href{https://www.facebook.com/photo/?fbid=479221431599846}{\textmd{President}, BSIT Students' League} (Aug 2024 -- Jun 2025): Led the organization and boosted IT students participation.}
+        \resumeItem{\href{https://www.facebook.com/ursb.graduatingclass2025/posts/pfbid02t76kxxXHifDiV8VjiDFa5jm7wXzg7KUqSKYHkyMiQ1XZuxie6974h98beaGmEV8nl}{\textmd{Public Information Officer}, URSB Graduating Class 2025} (Feb 2025 -- Jun 2025): Designed publication materials.}
+        
+        \resumeItem{\href{https://www.facebook.com/photo/?fbid=122141504498280266}{\textmd{Member}, URS Binangonan Electoral Tribunal} (Aug 2024 -- Jun 2025): Conducted interviews and created publication materials.}
+        
+        \resumeItem{\href{https://www.facebook.com/photo/?fbid=289764900545501}{\textmd{Vice President}, BSIT Students' League} (Aug 2023 -- Jun 2024): Planned organization activities and handled organizational order.}
+        
+        \resumeItem{\href{}{\textmd{Deputy}, BSIT Students' League} (Aug 2022 -- Jun 2023): Assisted with organizational tasks and leadership.}
+        
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
+
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -323,11 +333,11 @@ Graduating IT student specializing in back-end development with 4 years experien
 
     \resumeSubheading
       {University of Rizal System}{Binangonan, Rizal}
-      {Bachelor of Science in Information Technology}{August 2022 -- May 2025}
+      {Bachelor of Science in Information Technology}{August 2022 -- June 2025}
   
     \resumeSubheading
       {East Systems Colleges of Rizal}{Morong, Rizal}
-      {Bachelor of Science in Information Technology}{October 2020 -- May 2022}
+      {Bachelor of Science in Information Technology}{October 2020 -- June 2022}
 
   \resumeSubHeadingListEnd
 
