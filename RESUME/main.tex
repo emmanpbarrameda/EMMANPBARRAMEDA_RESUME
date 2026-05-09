@@ -24,8 +24,8 @@
   a4paper,
   left=0.50in,
   right=0.50in,
-  top=0.60in,
-  bottom=0.60in
+  top=0.55in,
+  bottom=0.55in
 ]{geometry}
 
 %----------FONT OPTIONS----------
@@ -129,9 +129,13 @@
 
 %-----------Objective-----------
 \section{Professional Summary}
+{\small
 \begin{justify}
-Full-stack Software Engineer with 5+ years of experience designing and delivering production-grade web applications, internal systems, and RESTful APIs across freelance and corporate environments. Proven track record of building scalable Laravel-based systems from planning through deployment, with hands-on expertise in CI/CD pipelines, Linux server management, Redis, WebSockets, and database optimization. Published open-source packages with thousands of downloads and a history of leading full-cycle projects solo and in teams.
+\vspace{-2pt}
+Full-stack Software Engineer with 5+ years of experience across freelance and corporate roles, building and deploying production-grade web applications, internal systems, and RESTful APIs. Promoted to Software Engineer within 6 months at Casterly Ventures Corp. for independently delivering three production systems. Specialized in Laravel and the TALL stack, with hands-on expertise in CI/CD pipelines, Linux VPS management, Redis, WebSockets, and database optimization. Author of open-source Composer packages with 8,300+ downloads. Self-driven and experienced working independently across remote and on-site environments.
+\vspace{-4pt}
 \end{justify}
+}
 
 %-----------EXPERIENCE-----------
 \section{Work Experience}
@@ -153,8 +157,8 @@ Full-stack Software Engineer with 5+ years of experience designing and deliverin
     \resumeItem{Promoted within 6 months for leading delivery of three production systems.}
     \resumeItem{Migrated production to a self-managed Linux VPS Server (Ubuntu 24.04, Nginx, CloudPanel), cutting hosting costs by 72\% with 4x more RAM and 2x more CPU cores.}
     \resumeItem{Built atomic GitHub Actions CI/CD pipelines and managed Redis queue infrastructure (8 workers), reducing deploy time by 70\%.}
-    \resumeItem{Developed a POS system with barcode scan-to-sell, cart management and dynamic pricing.}
-    \resumeItem{Built a Warehouse Management System integrated with the IMS, improving inventory traceability by 90\%.}
+    \resumeItem{Developed a POS system with barcode scanning, cart management, and dynamic pricing, eliminating manual sales processing for the sales team.}
+    \resumeItem{Built a Warehouse Management System integrated with the IMS, improving inventory traceability across warehouse operations.}
     \resumeItem{Optimized system performance via composite database indexes and Redis caching, and integrated Google Drive API for automated cloud backup of generated reports.}
   \resumeItemListEnd
 
@@ -162,27 +166,26 @@ Full-stack Software Engineer with 5+ years of experience designing and deliverin
   {Software Developer}{July 2025 - December 2025}
   {\href{https://casterly.ph/}{Casterly Ventures Corp.}}{Pasig City, Philippines}
   \resumeItemListStart
-    \resumeItem{Designed and built the corporate website (casterly.ph) with a customizable CMS for dynamic content.}
+    \resumeItem{Built casterly.ph full-stack with a custom Filament CMS, enabling non-technical staff to manage content without developer involvement.}
     \resumeItem{Configured domain management and Cloudflare DNS, SSL, and security rules for site and shop.}
     \resumeItem{Built the e-commerce back-end (shop.casterly.ph) with order processing, payment integration, promo codes, reviews, and real-time shipment tracking via TrackingMore API.}
-    \resumeItem{Developed a full-stack IMS for ITAD operations processing 2,200+ devices through an automated 8-stage workflow, architected as a modular monolith with service-layer pattern and config-driven design using Laravel and FilamentPHP.}
-    \resumeItem{Implemented Blancco/Speccy XML parsing and queued Excel/PDF reporting.}
-    \resumeItem{Integrated Laravel Reverb via WebSockets for real-time inventory and workflow updates.}
+    \resumeItem{Developed a full-stack IMS for ITAD operations processing 2,200+ devices through an automated 8-stage workflow, architected as a modular monolith with service-layer pattern and config-driven design to support long-term maintainability and scalability using Laravel and FilamentPHP.}
+    \resumeItem{Implemented Blancco/Speccy XML parsing for automated laptop spec extraction and queued Excel/PDF reporting; integrated Laravel Reverb via WebSockets for real-time inventory and workflow updates.}
   \resumeItemListEnd
     
 
     \resumeSubheading
-      {Backend Developer Intern}{February 2025 -- April 2025}
+      {Backend Developer Intern}{February 2025 - April 2025}
       {\href{https://bapplware.com/}{Bapplware Technologies, Inc.}}{Mandaluyong City, Philippines}
         \resumeItemListStart
             \resumeItem{Developed RESTful API modules for the HRP-API platform using PHP Symfony in Agile workflows.}
             \resumeItem{Implemented error handling, soft deletes, and timestamps to improve API reliability and data integrity.}
           \resumeItem{Wrote PHPUnit test cases to ensure code quality and catch regressions before deployment.}
-          \resumeItem{Participated in Agile meetings including sprint planning and daily stand-ups.}
+          \resumeItem{Contributed to Agile sprints remotely, including sprint planning, daily standups, and feature delivery.}
         \resumeItemListEnd
 
     \resumeSubheading
-      {Freelance Developer}{June 2020 -- January 2025}
+      {Freelance Developer}{June 2020 - January 2025}
       {Remote}{}
       \resumeItemListStart
         \resumeItem{Designed and delivered custom software systems for government and academic clients across 5+ years.}
@@ -223,7 +226,7 @@ Full-stack Software Engineer with 5+ years of experience designing and deliverin
       {\href{https://github.com/emmanpbarrameda/filament-take-picture-field}
       {\textbf{Filament Take Picture Field} $|$ \emph{PHP, Laravel, FilamentPHP, Composer Package}}}{Open Source Initiative}
       \resumeItemListStart
-        \resumeItem{Created and maintained an open-source FilamentPHP form field plugin for capturing images directly from the browser camera, reaching nearly \textbf{20 GitHub stars} and over \textbf{8.3k downloads}.}
+        \resumeItem{Created and maintained an open-source FilamentPHP form field plugin for capturing images directly from the browser camera, with \textbf{32 GitHub stars} and \textbf{8,300+ downloads}.}
       \resumeItemListEnd
       
     \resumeProjectHeading
@@ -234,11 +237,18 @@ Full-stack Software Engineer with 5+ years of experience designing and deliverin
       \resumeItemListEnd
 
     \resumeProjectHeading
-        {\href{https://emmanpbarrameda.github.io/dev-notes/}
-        {\textbf{Dev Notes} $|$ \emph{Astro, Markdown, GitHub Pages}}}{Front-end Development}
+        {\href{https://ursb-itsl.vercel.app/}
+        {\textbf{URSB-ITSL Website} $|$ \emph{React, TypeScript, Vite}}}{Front-end Development}
         \resumeItemListStart
-            \resumeItem{Maintain a technical blog on GitHub Pages, sharing development insights, solutions, and practical programming notes.}
+            \resumeItem{Built and deployed the official website for the URSB BSIT Students' League with static site optimization and SEO.}
         \resumeItemListEnd
+
+    % \resumeProjectHeading
+    %     {\href{https://emmanpbarrameda.github.io/dev-notes/}
+    %     {\textbf{Dev Notes} $|$ \emph{Astro, Markdown, GitHub Pages}}}{Front-end Development}
+    %     \resumeItemListStart
+    %         \resumeItem{Maintain a technical blog on GitHub Pages, sharing development insights, solutions, and practical programming notes.}
+    %     \resumeItemListEnd
       
     \resumeProjectHeading
       {\href{https://github.com/emmanpbarrameda/GIT-RAWify}
@@ -249,7 +259,7 @@ Full-stack Software Engineer with 5+ years of experience designing and deliverin
       
     \resumeProjectHeading
       {\href{https://mmchurch.online}
-      {\textbf{MMC MIS (Capstone Project)} $|$ \emph{Laravel, FilamentPHP, MySQL, AI}}}{September 2023 -- March 2025}
+      {\textbf{MMC MIS (Capstone Project)} $|$ \emph{Laravel, FilamentPHP, MySQL, AI}}}{September 2023 - March 2025}
       \resumeItemListStart
         \resumeItem{Led the team as Project Manager and Lead Developer in building a church Management Information System that streamlined administrative workflows and won \textbf{Best Software Developmental Study} at the 18th Campus Research Congress.}
       \resumeItemListEnd
@@ -274,15 +284,14 @@ Full-stack Software Engineer with 5+ years of experience designing and deliverin
 \section{Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Backend}{: PHP (TALL \& LAMP), Laravel, Livewire, Symfony, RESTful APIs, Apache, MySQL, Redis, PHPUnit} \\
-     \textbf{Frontend \& UI}{: HTML/CSS, Tailwind CSS, Bootstrap, JavaScript, jQuery, Alpine.js, Vue.js, Blade, React.js} \\
-     \textbf{Frameworks \& Tools}{: FilamentPHP, Node.js, Astro, Quasar Framework, Android Studio} \\
-     \textbf{DevOps \& Infrastructure}{: VPS Management, Linux (Ubuntu), Nginx, CloudPanel, Cloudflare, GitHub Actions, Git, Docker, Postman} \\
-     % \textbf{AI-Assisted Development}{: Claude AI, ChatGPT, N8N, OpenClaw} \\
-     \textbf{Other Languages}{: Java, VB.Net, C\#, C++} \\
+     \textbf{Primary Stack}{: PHP, Laravel, Livewire, Alpine.js, Tailwind CSS, Blade, MySQL, Redis, FilamentPHP} \\
+     \textbf{Frontend}{: JavaScript, Vue.js, jQuery, HTML/CSS, Bootstrap, React.js, TypeScript, Vite} \\
+     \textbf{DevOps \& Infrastructure}{: Linux (Ubuntu), Nginx, Cloudflare, Docker, CloudPanel, GitHub Actions, Git} \\
+     \textbf{Tools}{: PHPUnit, Postman, Composer} \\
+     \textbf{Other Languages}{: Java, C\#, VB.Net} \\
+     \textbf{Methodologies}{: Agile (Scrum), Kanban} \\
     }}
 \end{itemize}
-
 
 
 
@@ -302,9 +311,9 @@ Full-stack Software Engineer with 5+ years of experience designing and deliverin
       \resumeItem{Student Organization President (2024-2025) and Vice President (2023–2024) of the URSB BSIT Students' League; Public Information Officer (PIO) of the URSB Graduating Class 2025.}
     \resumeItemListEnd
 
-  \resumeSubheading
-    {East Systems Colleges of Rizal}{Morong, Rizal}
-    {Bachelor of Science in Information Technology}{Oct 2020 -- Jun 2022 (Transferred-out to URS)}
+  % \resumeSubheading
+  %   {East Systems Colleges of Rizal}{Morong, Rizal}
+  %   {Bachelor of Science in Information Technology}{Oct 2020 -- Jun 2022 (Transferred-out to URS)}
 
 \resumeSubHeadingListEnd
 
